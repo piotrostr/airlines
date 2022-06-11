@@ -7,7 +7,7 @@ def get_data() -> pd.DataFrame:
     """
     Returns a dataframe of the data
     """
-    df = pd.read_csv('data.csv', low_memory=False)
+    df = pd.read_csv('data/data.csv', low_memory=False)
     df.drop('Unnamed: 0', axis=1, inplace=True)
     return df
 

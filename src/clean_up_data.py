@@ -8,9 +8,9 @@ meaningful_cols = [
 
 
 def clean_up_data():
-    df = pd.read_stata('data.dta')
+    df = pd.read_stata('raw-data.dta')
     df = df[meaningful_cols]
-    df.write_csv('data.csv')
+    df.to_csv('data.csv')
 
 
 if __name__ == "__main__":
